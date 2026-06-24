@@ -1,0 +1,194 @@
+2026-06-23 16:06:05,048 verification Split: train=816 val=59 test=224 | CSVs on disk=1099 | seed=42
+2026-06-23 16:06:05,048 verification window=300 stride=150 enroll_ratio=0.80 block_len=2400 gap=300 samples nan_ratio=0.20
+2026-06-23 16:06:05,052 verification Cached 224/224 subjects in cache_verification
+2026-06-23 16:06:05,052 eval Evaluating 224 test subjects.
+
+========================================================================
+OPEN-SET USER VERIFICATION — model: M1
+========================================================================
+EVALUATION CAVEAT:
+  Subjects were recorded in a single session, so our evaluation does not
+  capture cross-session variability (watch re-placement, day-to-day
+  behavioral drift). Reported EER should be read as a WITHIN-SESSION LOWER
+  BOUND; cross-session robustness is left for future work.
+========================================================================
+Configuration:
+  agg_windows           : 1
+  block_seconds         : 120.0
+  checkpoint            : checkpoints_verification/m1_arcface.best.pt
+  enroll_ratio          : 0.8
+  gap_seconds           : 15.0
+  impostors_per_user    : 2000
+  model                 : m1
+  n_subjects            : 224
+  seed                  : 42
+  split                 : test
+========================================================================
+
+[ scorer = cosine ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 25,923 / 448,000
+  EER                        :   5.15 %
+  FAR @ EER threshold        :   5.15 %
+  FRR @ EER threshold        :   5.15 %
+  EER threshold (tau)        : 0.6784
+  Rank-1 identification acc. :  52.70 % (n=4,000)
+
+========================================================================
+
+========================================================================
+OPEN-SET USER VERIFICATION — model: M1 [POOLED N=500]
+========================================================================
+EVALUATION CAVEAT:
+  Subjects were recorded in a single session, so our evaluation does not
+  capture cross-session variability (watch re-placement, day-to-day
+  behavioral drift). Reported EER should be read as a WITHIN-SESSION LOWER
+  BOUND; cross-session robustness is left for future work.
+========================================================================
+Configuration:
+  agg_mode              : POOLED
+  agg_windows           : 1
+  block_seconds         : 120.0
+  checkpoint            : checkpoints_verification/m1_arcface.best.pt
+  enroll_ratio          : 0.8
+  gap_seconds           : 15.0
+  impostors_per_user    : 2000
+  model                 : m1
+  n_subjects            : 224
+  pooled_n              : 500
+  seed                  : 42
+  split                 : test
+========================================================================
+
+[ scorer = cosine ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 224 / 49,952
+  EER                        :   0.89 %
+  FAR @ EER threshold        :   0.89 %
+  FRR @ EER threshold        :   0.89 %
+  EER threshold (tau)        : 0.9373
+  Rank-1 identification acc. :  97.32 % (n=224)
+
+========================================================================
+2026-06-23 16:06:43,398 verification Split: train=816 val=59 test=224 | CSVs on disk=1099 | seed=42
+2026-06-23 16:06:43,398 verification window=300 stride=150 enroll_ratio=0.80 block_len=2400 gap=300 samples nan_ratio=0.20
+2026-06-23 16:06:43,402 verification Cached 224/224 subjects in cache_verification
+2026-06-23 16:06:43,402 eval Evaluating 224 test subjects.
+
+========================================================================
+OPEN-SET USER VERIFICATION — model: M1
+========================================================================
+EVALUATION CAVEAT:
+  Subjects were recorded in a single session, so our evaluation does not
+  capture cross-session variability (watch re-placement, day-to-day
+  behavioral drift). Reported EER should be read as a WITHIN-SESSION LOWER
+  BOUND; cross-session robustness is left for future work.
+========================================================================
+Configuration:
+  agg_windows           : 1
+  block_seconds         : 120.0
+  checkpoint            : checkpoints_verification/m1_arcface.best.pt
+  enroll_ratio          : 0.8
+  gap_seconds           : 15.0
+  impostors_per_user    : 2000
+  model                 : m1
+  n_subjects            : 224
+  seed                  : 42
+  split                 : test
+========================================================================
+
+[ scorer = cosine ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 25,923 / 448,000
+  EER                        :   5.15 %
+  FAR @ EER threshold        :   5.15 %
+  FRR @ EER threshold        :   5.15 %
+  EER threshold (tau)        : 0.6784
+  Rank-1 identification acc. :  52.70 % (n=4,000)
+
+========================================================================
+
+========================================================================
+OPEN-SET USER VERIFICATION — model: M1 [POOLED N=500]
+========================================================================
+EVALUATION CAVEAT:
+  Subjects were recorded in a single session, so our evaluation does not
+  capture cross-session variability (watch re-placement, day-to-day
+  behavioral drift). Reported EER should be read as a WITHIN-SESSION LOWER
+  BOUND; cross-session robustness is left for future work.
+========================================================================
+Configuration:
+  agg_mode              : POOLED
+  agg_windows           : 1
+  block_seconds         : 120.0
+  checkpoint            : checkpoints_verification/m1_arcface.best.pt
+  enroll_ratio          : 0.8
+  gap_seconds           : 15.0
+  impostors_per_user    : 2000
+  model                 : m1
+  n_subjects            : 224
+  pooled_n              : 500
+  seed                  : 42
+  split                 : test
+========================================================================
+
+[ scorer = cosine ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 224 / 49,952
+  EER                        :   0.89 %
+  FAR @ EER threshold        :   0.89 %
+  FRR @ EER threshold        :   0.89 %
+  EER threshold (tau)        : 0.9373
+  Rank-1 identification acc. :  97.32 % (n=224)
+
+========================================================================
+2026-06-23 16:11:55,025 verification Split: train=816 val=59 test=224 | CSVs on disk=1099 | seed=42
+2026-06-23 16:11:55,026 verification window=300 stride=150 enroll_ratio=0.80 block_len=2400 gap=300 samples nan_ratio=0.20
+2026-06-23 16:11:55,030 verification Cached 224/224 subjects in cache_verification
+2026-06-23 16:11:55,030 eval Evaluating 224 test subjects.
+2026-06-23 16:11:55,042 verification Cached 816/816 subjects in cache_verification
+2026-06-23 16:11:59,240 verification Channel stats from 816 subjects, 95523652 frames.
+2026-06-23 16:13:00,248 verification B0 scaler fit on 49776 windows (248 features).
+2026-06-23 16:16:12,587 eval scorer: cosine
+2026-06-23 16:16:12,837 eval scorer: ocsvm
+
+========================================================================
+OPEN-SET USER VERIFICATION — model: B0
+========================================================================
+EVALUATION CAVEAT:
+  Subjects were recorded in a single session, so our evaluation does not
+  capture cross-session variability (watch re-placement, day-to-day
+  behavioral drift). Reported EER should be read as a WITHIN-SESSION LOWER
+  BOUND; cross-session robustness is left for future work.
+========================================================================
+Configuration:
+  agg_windows           : 500
+  block_seconds         : 120.0
+  enroll_ratio          : 0.8
+  gap_seconds           : 15.0
+  impostors_per_user    : 2000
+  model                 : b0
+  n_subjects            : 224
+  seed                  : 42
+  split                 : test
+========================================================================
+
+[ scorer = cosine ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 1,795 / 400,285
+  EER                        :  37.21 %
+  FAR @ EER threshold        :  37.21 %
+  FRR @ EER threshold        :  37.21 %
+  EER threshold (tau)        : 0.2193
+  Rank-1 identification acc. :   7.24 % (n=1,795)
+
+[ scorer = ocsvm ]
+  Test subjects (gallery)    : 224
+  Genuine / impostor attempts: 1,795 / 400,285
+  EER                        :  38.33 %
+  FAR @ EER threshold        :  38.33 %
+  FRR @ EER threshold        :  38.33 %
+  EER threshold (tau)        : -0.1028
+  Rank-1 identification acc. :   2.01 % (n=1,795)
+
+========================================================================
